@@ -1,0 +1,15 @@
+[ui]
+  color = auto
+[color]
+  ui = auto
+[rerere]
+  enabled = true
+[rebase]
+  autosquash = true
+[push]
+  default = nothing
+[heroku]
+  account = personal
+[alias]
+  l  = log --oneline --decorate --graph
+  recent = !git log --no-walk --date-order --oneline --decorate $(git rev-list --branches --no-walk)
