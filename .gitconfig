@@ -13,3 +13,9 @@
 [alias]
   l  = log --oneline --decorate --graph
   recent = !git log --no-walk --date-order --oneline --decorate $(git rev-list --branches --no-walk)
+  authors = log --abbrev-commit --format="%an" --no-merges
+[user]
+	name = Jake Yesbeck
+	email = jake@apartmentlist.com
+[core]
+	editor = subl -w
