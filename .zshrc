@@ -1,6 +1,12 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+source ~/.bashrc
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+alias lincopy='xclip -selection clipboard'
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -10,9 +16,7 @@ ZSH_THEME="awesomepanda"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias staging='ssh -i ~/.ssh/vb-east.pem ubuntu@pg-stage.verticalbrands.net'
-alias vb-logger='ssh -i ~/.ssh/vb-east.pem ubuntu@logger.verticalbrands.net'
-alias heroku_psql='~/psql_heroku_follower.sh'
+alias heroku_psql= '~/psql_heroku_follower.sh'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
