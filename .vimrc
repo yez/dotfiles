@@ -22,7 +22,6 @@ set cursorline
 set ttyfast
 set ruler
 set laststatus=2
-set undofile
 set number
 
 " open below and right for splits, more natural
@@ -57,3 +56,13 @@ endif
 
 " remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
+
+" use dispatch to run async
+let g:rspec_command = "Dispatch rspec {spec}"
+
+" convenience mapping for spec running
+map <Leader>s :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" do not fold markdown
+let g:vim_markdown_folding_disabled = 1
