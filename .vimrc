@@ -60,6 +60,9 @@ autocmd BufWritePre * %s/\s\+$//e
 " use dispatch to run async
 let g:rspec_command = "Dispatch rspec {spec}"
 
+" json formatter
+command Jformat execute ":%!python -m json.tool"
+
 " convenience mapping for spec running
 map <Leader>s :call RunCurrentSpecFile()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
