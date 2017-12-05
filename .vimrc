@@ -23,6 +23,10 @@ set ttyfast
 set ruler
 set laststatus=2
 set number
+set hlsearch
+
+" allow copying to system clipboard
+set clipboard=unnamed
 
 " open below and right for splits, more natural
 set splitbelow
@@ -58,7 +62,7 @@ endif
 autocmd BufWritePre * %s/\s\+$//e
 
 " use dispatch to run async
-let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 " json formatter
 command Jformat execute ":%!python -m json.tool"
@@ -66,6 +70,11 @@ command Jformat execute ":%!python -m json.tool"
 " convenience mapping for spec running
 map <Leader>s :call RunCurrentSpecFile()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" yanking and pasting to/from system clipboard
+map <Leader>y "*y
+map <Leader>P "*p
+map <Leader>Y ggVG"*y
 
 " do not fold markdown
 let g:vim_markdown_folding_disabled = 1
