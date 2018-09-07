@@ -26,7 +26,7 @@ set number
 set hlsearch
 
 " allow copying to system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " open below and right for splits, more natural
 set splitbelow
@@ -93,3 +93,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { "mode" : "active" }
+
+let g:CommandTTraverseSCM='pwd'
