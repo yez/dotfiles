@@ -18,7 +18,7 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set cursorline
+set nocursorline
 set ttyfast
 set ruler
 set laststatus=2
