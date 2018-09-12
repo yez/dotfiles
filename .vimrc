@@ -95,3 +95,5 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { "mode" : "active" }
 
 let g:CommandTTraverseSCM='pwd'
+" bind K to grep word under cursor
+nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
