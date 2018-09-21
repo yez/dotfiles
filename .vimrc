@@ -21,6 +21,7 @@ set wildmode=list:longest
 set nocursorline
 set ttyfast
 set ruler
+set statusline+=%F
 set laststatus=2
 set number
 set hlsearch
