@@ -27,7 +27,14 @@ set number
 set hlsearch
 
 " allow copying to system clipboard
-set clipboard=unnamedplus
+if has("unix")
+  let s:uname = system("echo -n \"$(uname)\"")
+  if s:uname == "Darwin"
+    set clipboard=unnamed
+  else
+    set clipboard=unnamedplus
+  endif
+endif
 
 " open below and right for splits, more natural
 set splitbelow
