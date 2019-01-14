@@ -15,3 +15,5 @@ export PATH="$PATH:./node_modules/.bin"
 
 # added by travis gem
 [ -f /Users/jakeyesbeck/.travis/travis.sh ] && source /Users/jakeyesbeck/.travis/travis.sh
+
+source .prompt_config
