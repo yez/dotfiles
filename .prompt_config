@@ -1,0 +1,12 @@
+source .colors
+
+function git_branch_name {
+  echo 'here'
+}
+
+DELIM_COLOR=$txtwht
+TIME_COLOR=$txtgrn
+DIR_COLOR=$txtblu
+GIT_BRANCH_COLOR=$txtcyn
+
+PS1="\[$TIME_COLOR\]\t \[$DELIM_COLOR\]| \[$DIR_COLOR\]\W \[$DELIM_COLOR\]| \[$GIT_BRANCH_COLOR\]\$(git_branch_name) \[$txtrst\]-> "
