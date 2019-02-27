@@ -7,6 +7,8 @@ syntax on
 
 set modelines=0
 
+set path=$PWD/**
+set complete-=i " Don't include all files in PATH when autocompleting
 set tabstop=2
 set expandtab
 set shiftwidth=2
@@ -103,5 +105,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { "mode" : "active" }
 
 let g:CommandTTraverseSCM='pwd'
+let g:CommandTSuppressMaxFilesWarning=1
+let g:CommandTFileScanner='find'
 " bind K to grep word under cursor
 nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>

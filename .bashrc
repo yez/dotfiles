@@ -1,7 +1,6 @@
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/usr/X11/bin # for running specs locally
+export PATH=$PATH:/usr/X11/bin # for running specs locally
 alias g='git status'
 alias l='ls'
 alias ll='ls -lah'
