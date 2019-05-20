@@ -16,3 +16,9 @@ export PATH="$PATH:./node_modules/.bin"
 [ -f /Users/jakeyesbeck/.travis/travis.sh ] && source /Users/jakeyesbeck/.travis/travis.sh
 
 source .prompt_config
+if [[ "Linux" -eq $(uname -s) ]]
+  then xmodmap -quiet -e "pointer = 1 25 3 4 5 6 7 8 9 0"
+fi
+
+# Add pip3 to PATH for scripting.
+export PATH="$PATH:$HOME/.local/bin"
