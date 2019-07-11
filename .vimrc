@@ -1,3 +1,4 @@
+set shell=/bin/bash\ -i
 filetype on
 execute pathogen#infect()
 filetype plugin indent on
