@@ -6,7 +6,7 @@ git_branch_name() {
 
 DELIM_COLOR=$txtwht
 TIME_COLOR=$txtgrn
-DIR_COLOR=$txtblu
+DIR_COLOR=$txtylw
 GIT_BRANCH_COLOR=$txtcyn
 
 PS1="\[$TIME_COLOR\]\t \[$DELIM_COLOR\]| \[$DIR_COLOR\]\W \[$DELIM_COLOR\]|\[$GIT_BRANCH_COLOR\]\$(git_branch_name) \[$txtrst\]-> "
