@@ -19,4 +19,4 @@
 	email = yesbeckjs@gmail.com
 [core]
 	editor = vim
-	excludesfile = /Users/jakeyesbeck/.gitignore
+	excludesfile = ~/.gitignore

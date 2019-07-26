@@ -28,6 +28,8 @@ set statusline+=%F
 set laststatus=2
 set number
 set hlsearch
+set foldmethod=syntax
+set foldlevelstart=20
 
 " allow copying to system clipboard
 if has("unix")
