@@ -9,6 +9,8 @@ export EDITOR=vim
 
 export PATH="$PATH:./node_modules/.bin"
 
+export HOMEBREW_NO_AUTO_UPDATE=1 # don't have homebrew update other than what you specify
+
 # added by travis gem
 [ -f /Users/jakeyesbeck/.travis/travis.sh ] && source /Users/jakeyesbeck/.travis/travis.sh
 
@@ -37,3 +39,4 @@ cd_and_env() {
 }
 
 alias cd='cd_and_env'
+source $(which assume-role)
